@@ -9,23 +9,34 @@ function Pagination({ totalProducts, productPerPage, currentPage, setCurrentPage
     }
 
 
-    const handlePrev = () => {
-        if (currentPage > 1) {
+    // const handlePrev = () => {
+    //     if (currentPage > 1) {
+    //         setCurrentPage(currentPage - 1)
+    //     }
+    // }
+
+    //     const handleNext = () => {
+    //     if (currentPage < pages.length) {
+    //         setCurrentPage(currentPage + 1)
+    //     }
+    // }
+
+
+
+        const handlePrev = () => {
             setCurrentPage(currentPage - 1)
         }
-    }
+
 
     const handleNext = () => {
-        if (currentPage < pages.length) {
             setCurrentPage(currentPage + 1)
         }
-    }
 
 
 
     return (
         <>
-            <div className='d-flex align-items-center justify-content-center mt-5 pt-5'>
+            <div className='d-flex align-items-center justify-content-center mt-sm-5'>
                 <button onClick={handlePrev} className='btn  me-2 border rounded text-dark btn-success shadow' disabled={currentPage == 1}><i class="fa-solid fa-angles-left"></i></button>
                 {
                     pages.length > 0 &&

@@ -73,16 +73,16 @@ function View() {
   return (
     <>
       <Header />
-      <Row className='py-sm-5'>
+      <Row className='py-sm-5 container'>
         <Col className='d-flex align-items-center justify-content-center p-5' lg={6} md={6} sm={12}>
           <img src={product.thumbnail} alt="" height={"350px"} width={"350px"} />
         </Col>
-        <Col className='d-flex flex-column justify-content-center p-3' g={6} md={6} sm={12}>
+        <Col className='d-flex flex-column justify-content-center p-3 ' g={6} md={6} sm={12}>
           <div className='p-5'>
             <h5 className='text-info'>Product ID:{product.id}</h5>
             <h2 className='fw-bold text-success' style={{ fontFamily: "Merienda" }}>{product.title}</h2>
             <h2 className='fw-bolder text-primary' style={{ fontFamily: "Caveat" }}>${product.price}</h2>
-            <p className='text-dark' style={{ fontFamily: "italic" }}>{product.description}</p>
+            <p className='text-secondary' style={{ fontFamily: "italic" }}>{product.description}</p>
 
           </div>
           <div className='d-flex align-items-center justify-content-between px-5'>

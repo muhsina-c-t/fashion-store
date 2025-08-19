@@ -9,7 +9,7 @@ export default function Footer() {
         <div className='col-lg-5'>
           <div className='d-flex align-items-center mb-5'>
             <img src="http://freelogopng.com/images/all_img/1655837345shopify-png-icon.png" alt="" height={35} width={35} />
-            <h2 className='text-dark fw-bold ms-2' style={{fontFamily:'Dancing Script'}}>Shopify</h2>
+            <h2 className='text-dark fw-bold ms-2' style={{fontFamily:'Dancing Script'}}>E.cart</h2>
           </div>
           <p className='text-dark pe-sm-5' style={{ textAlign: "justify",fontFamily: "italic" }}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga suscipit, aliquam alias libero itaque dolorum ullam doloribus debitis deserunt error assumenda consequuntur laudantium sunt, blanditiis iusto, unde ipsum necessitatibus consectetur.</p>
           <p className='text-dark' style={{fontFamily: "italic"}}>Lorem ipsum dolor sit amet</p>
@@ -46,7 +46,7 @@ export default function Footer() {
         </div>
 
 
-        <div className='text-center text-dark' style={{fontFamily: "italic"}}>Copyright © april 2025 Batch, Media Player , Built with rect</div>
+        <div className='text-center text-dark' style={{fontFamily: "italic"}}>Copyright © april 2025 Batch, fashion store, Built with rect</div>
       </div>
 
     </>

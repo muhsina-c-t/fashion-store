@@ -30,8 +30,9 @@ export default function Header({ insideLanding }) {
                             height="60"
                             className="d-inline-block align-top"
                         />{' '}
-                        Shopify
-                    </Navbar.Brand>        <Navbar.Toggle aria-controls="navbarScroll" />
+                        E.cart
+                    </Navbar.Brand>        
+                    <Navbar.Toggle aria-controls="navbarScroll" />
                     <Navbar.Collapse id="navbarScroll">
 
 

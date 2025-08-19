@@ -20,7 +20,7 @@ export default function Landing() {
 
   const [currentPage, setCurrentPage] = useState(1)
 
-  const productPerPage = 8
+  const productPerPage = 6
 
   let endingIndex = currentPage * productPerPage
   let startingIndex = endingIndex - productPerPage
@@ -61,7 +61,7 @@ export default function Landing() {
                   currentProduct.map(pro => (
                     <Col className='mb-2 me-2 d-flex align-items-center justify-content-center' xl={3} lg={4} md={6} sm={12} >
                       {/* card */}
-                      <Card className='shadow' style={{ width: '18rem' }}>
+                      <Card className='shadow mb-5' style={{ width: '18rem' }}>
                         <Card.Img variant="top" src={pro.thumbnail} />
                         <Card.Body className='text-center'>
                           <Card.Title style={{ fontFamily: "Caveat" }}>{pro.title.slice(0, 12)}...</Card.Title>
