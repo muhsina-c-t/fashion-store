@@ -13,6 +13,8 @@ import Banner from '../components/Banner';
 
 export default function Landing() {
 
+  const [Bannershow,setBannershow]= useState(true)
+
   const { allProducts, loading, error } = useSelector(state => state.productReducer)
   console.log(allProducts, loading);
 
@@ -41,10 +43,11 @@ export default function Landing() {
 
   return (
     <>
-      <Header insideLanding={true} />
+      <Header insideLanding={true} setBannershow={setBannershow} />
 
       {/* banner -carousel */}
-      <Banner/>
+      {Bannershow && 
+      <Banner/>}
       <div className='container'>
         {
           loading ?
