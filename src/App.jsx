@@ -1,15 +1,13 @@
-import { useState } from 'react'
 import './App.css'
 import Landing from './pages/Landing'
 import Cart from './pages/Cart'
 import Wishlist from './pages/Wishlist'
-import Footer from './components/footer'
+import Footer from './components/Footer'
 import { Route, Routes } from 'react-router-dom'
 import View from './pages/View'
 
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
