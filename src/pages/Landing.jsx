@@ -1,14 +1,13 @@
 import React, { useEffect, useState } from 'react'
-import Header from '../components/header'
 import Card from 'react-bootstrap/Card';
 import { Link } from 'react-router-dom';
 import { Col, Row } from 'react-bootstrap';
 import { fetchProducts } from '../redux/slices/productSlice';
 import { useDispatch, useSelector } from 'react-redux';
 import Spinner from 'react-bootstrap/Spinner';
-
 import Pagination from '../components/Pagination';
 import Banner from '../components/Banner';
+import Header from '../components/Header';
 
 
 export default function Landing() {
@@ -43,7 +42,8 @@ export default function Landing() {
 
   return (
     <>
-      <Header insideLanding={true} setBannershow={setBannershow} />
+      {/* <Header insideLanding={true} setBannershow={setBannershow} /> */}
+      <Header/>
 
       {/* banner -carousel */}
       {Bannershow && 

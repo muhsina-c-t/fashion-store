@@ -8,7 +8,7 @@ import { searchProduct } from '../redux/slices/productSlice';
 
 
 
-export default function Header({ insideLanding , setBannershow }) {
+export default function Header({ insideLanding, setBannershow }) {
 
     const wishCount = useSelector(state => state.wishlistReducer)
     const cartCount = useSelector(state => state.cartReducer)
@@ -30,7 +30,7 @@ export default function Header({ insideLanding , setBannershow }) {
                             className="d-inline-block align-top"
                         />{' '}
                         E.cart
-                    </Navbar.Brand>        
+                    </Navbar.Brand>
                     <Navbar.Toggle aria-controls="navbarScroll" />
                     <Navbar.Collapse id="navbarScroll">
 
@@ -42,7 +42,7 @@ export default function Header({ insideLanding , setBannershow }) {
                             {
                                 insideLanding &&
                                 <div className='me-5 pe-5'>
-                                    <input type='text' className='form-control fs-6 border rounded' onFocus={()=>setBannershow(false)} onBlur={()=>setBannershow(true)} onChange={(e) => dispatch(searchProduct(e.target.value))} style={{ fontFamily: "Caveat", width: "300px" }} placeholder='Search for Products...' />
+                                    <input type='text' className='form-control fs-6 border rounded' onFocus={() => setBannershow(false)} onBlur={() => setBannershow(true)} onChange={(e) => dispatch(searchProduct(e.target.value))} style={{ fontFamily: "Caveat", width: "300px" }} placeholder='Search for Products...' />
 
                                 </div>
                             }

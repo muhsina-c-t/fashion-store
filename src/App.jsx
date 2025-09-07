@@ -2,10 +2,9 @@ import './App.css'
 import Landing from './pages/Landing'
 import Cart from './pages/Cart'
 import Wishlist from './pages/Wishlist'
-import Footer from './components/Footer'
 import { Route, Routes } from 'react-router-dom'
 import View from './pages/View'
-
+import Footer from './components/Footer'
 
 function App() {
 

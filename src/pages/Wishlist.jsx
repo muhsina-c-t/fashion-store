@@ -1,5 +1,5 @@
 import React from 'react'
-import Header from '../components/header'
+import Header from '../components/Header'
 import { Col, Row } from 'react-bootstrap'
 import Card from 'react-bootstrap/Card';
 import { useDispatch, useSelector } from 'react-redux';

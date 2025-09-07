@@ -1,11 +1,10 @@
 import React from 'react'
-import Header from '../components/header'
 import Table from 'react-bootstrap/Table';
 import { Col, Row } from 'react-bootstrap';
 import { Link, useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { decrementQuantity, emptyCart, incrementQuantity, removeCartItem } from '../redux/slices/cartSlice';
-
+import Header from '../components/Header';
 export default function Cart() {
   const cartpage = useSelector(state => state.cartReducer)
   const dispatch = useDispatch()
