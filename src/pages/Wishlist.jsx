@@ -31,7 +31,7 @@ export default function Wishlist() {
 
     <>
       <Header />
-      <h1 className='fw-bold text-primary mt-5 ms-5' style={{ fontFamily: "Merienda" }}>Your Wishlist</h1>
+      <h1 className='fw-bold text-primary mt-5 ms-5 fs-2' style={{ fontFamily: "Merienda" }}>Your Wishlist</h1>
       {/* card */}
       {
         wishadd?.length > 0 ?

@@ -32,7 +32,7 @@ export default function Cart() {
   return (
     <>
       <Header />
-      <h1 className='fw-bold text-primary mt-5 ms-5' style={{ fontFamily: "Merienda" }}>Cart Summary</h1>
+      <h1 className='fw-bold text-primary mt-5 ms-5 fs-2' style={{ fontFamily: "Merienda" }}>Cart Summary</h1>
 
       {
         cartpage?.length > 0 ?

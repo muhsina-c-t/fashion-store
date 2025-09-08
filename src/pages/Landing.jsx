@@ -43,7 +43,7 @@ export default function Landing() {
   return (
     <>
       {/* <Header insideLanding={true} setBannershow={setBannershow} /> */}
-      <Header/>
+      <Header insideLanding={true} setBannershow={setBannershow}/>
 
       {/* banner -carousel */}
       {Bannershow && 
